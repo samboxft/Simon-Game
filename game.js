@@ -6,33 +6,25 @@ let userClickedPattern = [];
 let started = false;
 let level = 0;
 
-$(document).keypress(function () {
-    if (!started) {
-        $("#level-title").text("Level " + level)
-        nextSequence();
-        started = true;
-    };
-});
+// $(document).keypress(function () {
+//     if (!started) {
+//         $("#level-title").text("Level " + level)
+//         nextSequence();
+//         started = true;
+//     };
+// });
 
-$(function(){
-    'use-strict';
-    
-    var button = document.getElementsByTagName('button')[0];
-    var myHandler = function() {
-        var click = 0;
-        return function() {
-            if(click === 0) {
-                alert('single click');
-            }
-            click++;
-        }
-    }();
-    
-    
-    button.addEventListener('click', myHandler, false);
-    })();
+document.getElementById("start").addEventListener("click", handler);
 
-
+// handler function
+function handler(e) {
+    // remove this handler
+    e.target.removeEventListener(e.type, arguments.callee);
+    this.remove();
+    $("#level-title").text("Level " + level)
+    nextSequence();
+    started = true;
+}
 
 
 $(".btn").click(function () {
@@ -51,7 +43,7 @@ function checkAnswer(currentLevel) {
 
     if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
         if (userClickedPattern.length === gamePattern.length) {
-            setTimeout(function(){nextSequence()}, 1000);
+            setTimeout(function () { nextSequence() }, 1000);
         }
     } else {
         playSound("wrong");
