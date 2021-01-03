@@ -1,0 +1,21 @@
+
+
+// $( "#whichkey" ).on( "mousedown", function( event ) {
+//     $( "#log" ).html( event.type + ": " +  event.which );
+//   });
+// $( "#whichkey" ).on( "keydown", function( event ) {
+//     $( "#log" ).html( event.type + ": " +  event.which );
+//   });
+
+// function keyOrClicked(){
+//     if((a||b)===true)
+//    var a = document.addEventListener('keydown', function() {
+//         alert("once"); 
+//     }, {once: true});
+
+//     var b = document.addEventListener('click', function() {
+//         alert('once');
+//     }, {once: true});
+// };
+// keyOrClicked();
+
