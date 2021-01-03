@@ -50,10 +50,15 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
-/* #start {
+#start {
     width:13rem;
-    height:5rem
-} */
+    height:5rem;
+    border-radius:12px;
+    color:rgb(129, 108, 68);
+    background-color:#e6d693;
+    font-size: large;
+    font-weight: bold;
+}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
