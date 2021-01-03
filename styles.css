@@ -50,10 +50,10 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
-#start {
+/* #start {
     width:13rem;
     height:5rem
-}
+} */
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
