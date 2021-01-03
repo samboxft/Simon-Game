@@ -14,6 +14,25 @@ $(document).keypress(function () {
     };
 });
 
+$(function(){
+    'use-strict';
+    
+    var button = document.getElementsByTagName('button')[0];
+    var myHandler = function() {
+        var click = 0;
+        return function() {
+            if(click === 0) {
+                alert('single click');
+            }
+            click++;
+        }
+    }();
+    
+    
+    button.addEventListener('click', myHandler, false);
+    })();
+
+
 
 
 $(".btn").click(function () {
