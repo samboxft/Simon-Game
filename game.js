@@ -21,7 +21,6 @@ function handler(e) {
 	// remove this handler
 	e.target.removeEventListener(e.type, arguments.callee);
     this.remove();
-    alert("You'll only see this once!");
          $("#level-title").text("Level " + level)
         nextSequence();
         started = true;
