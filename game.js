@@ -30,7 +30,7 @@ $(".btn").click(function () {
 
 function checkAnswer(currentLevel) {
 
-    if (gamePattern[currentLevel] === userClickedPattern.length) {
+    if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
         console.log("success");
         if (userClickedPattern.length === gamePattern.length) {
             setTimeout(nextSequence, 1000);
@@ -68,10 +68,3 @@ function animatePress(currentColor) {
 
 
 
-// gamePattern.some(r => userClickedPattern.includes(r));
-// gamePattern.some((val) => userClickedPattern.indexOf(val) !== -1)
-
-
-
-
-$
